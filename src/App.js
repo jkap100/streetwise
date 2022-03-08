@@ -1,17 +1,17 @@
-import React, { useState } from "react";
-import { Redirect, Switch, Route } from "react-router-dom";
-import NavBar from "./NavBar";
+// import React, { useState } from "react";
+// import { Redirect, Switch, Route } from "react-router-dom";
+// import NavBar from "./NavBar";
 import Home from "./Home";
-import Favorites from "./Favorites";
-import ContributeForm from "./ContributeForm";
+// import Favorites from "./Favorites";
+// import ContributeForm from "./ContributeForm";
 
 function App() {
-  const [page, setPage] = useState("/");
+  // const [page, setPage] = useState("/");
 
   return (
     <div>
-      <div>
-        <NavBar onChangePage={setPage} />
+      <Home />
+      {/* <NavBar onChangePage={setPage} />
         <Switch>
           <Route path="/favorites">
             <Favorites />
@@ -25,9 +25,9 @@ function App() {
           <Route path="*">
             <h1>404 not found</h1>
           </Route>
-        </Switch>
+        </Switch> */}
 
-        {/* <NavBar onChangePage={setPage} />
+      {/* <NavBar onChangePage={setPage} />
         <Switch>
           <Route exact path="/">
             <Home />
@@ -47,7 +47,6 @@ function App() {
             <h1>404 not found</h1>
           </Route>
         </Switch> */}
-      </div>
     </div>
   );
 }
