@@ -18,11 +18,11 @@ function Home() {
       .then(setImages);
   }, []);
 
-  // const removeFavorites = (images) => {
-  //   // console.log('bot: ', bot);
+  const removeFavorites = (images) => {
+    console.log("image: ", images);
 
-  //   setFavorites(favorites.filter((favObj) => favObj !== images));
-  // };
+    setFavorites(favorites.filter((favObj) => favObj !== images));
+  };
 
   const addToFavorites = (image) => {
     console.log("image: ", image);
@@ -36,7 +36,7 @@ function Home() {
       <NavBar onChangePage={setPage} />
       <Switch>
         <Route path="/favorites">
-          <Favorites favorites={favorites} />
+          <Favorites favorites={favorites} removeFavorites={removeFavorites} />
         </Route>
         <Route path="/contribute">
           <ContributeForm />

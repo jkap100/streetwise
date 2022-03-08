@@ -1,9 +1,9 @@
 import React from "react";
 import ImageCard from "./ImageCard";
 
-function Favorites({ favorites }) {
+function Favorites({ favorites, removeFavorites }) {
   const favoritesCard = favorites.map((favObj) => (
-    <ImageCard key={favObj.id} imgObj={favObj} />
+    <ImageCard key={favObj.id} imgObj={favObj} handleClick={removeFavorites} />
   ));
 
   return (
