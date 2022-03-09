@@ -7,7 +7,7 @@ function Favorites({ favorites, removeFavorites }) {
   ));
 
   return (
-    <div>
+    <div id="imageCard">
       <h1>Favorite Images</h1>
       <div id="favImages">{favoritesCard}</div>
     </div>

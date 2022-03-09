@@ -1,15 +1,15 @@
 import React from "react";
 
 const PopUp = (props) => {
-  return (
-    <div className="popup-box">
-      <div className="box">
-        <span className="close-icon" onClick={props.handleClose}>
-          x
-        </span>
-        {props.content}
+  return props.trigger ? (
+    <div className="popup">
+      <div className="popup-inner">
+        <button className="close-btn">Close</button>
+        {props.children}
       </div>
     </div>
+  ) : (
+    ""
   );
 };
 

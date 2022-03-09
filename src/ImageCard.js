@@ -5,8 +5,13 @@ function ImageCard({ imgObj, handleClick }) {
     <div className="card">
       <img
         onClick={() => handleClick(imgObj)}
+        onMouseEnter={() => {
+          console.log("Event:MouseEnter");
+        }}
+        onMouseLeave={() => {
+          console.log("Event:MouseLeave");
+        }}
         id="thumbnail"
-        text="Added to Favorites!"
         src={imgObj.image}
         alt="graffiti"
       />
