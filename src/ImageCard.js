@@ -6,6 +6,7 @@ function ImageCard({ imgObj, handleClick }) {
       <img
         onClick={() => handleClick(imgObj)}
         id="thumbnail"
+        text="Added to Favorites!"
         src={imgObj.image}
         alt="graffiti"
       />
