@@ -53,6 +53,12 @@
       "image": "./images/pexels-bryan-gomes-3977529.jpg",
       "name": "Multi Colored Elephant Graffit",
       "location": "Unknown"
+    },
+    {
+      "image": "https://images.pexels.com/photos/1624079/pexels-photo-1624079.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260",
+      "name": "White and Black",
+      "location": "Unknown",
+      "id": 11
     }
   ]
 }

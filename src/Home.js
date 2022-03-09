@@ -19,16 +19,28 @@ function Home() {
   }, []);
 
   const removeFavorites = (images) => {
-    console.log("image: ", images);
-
+    // console.log("image: ", images);
     setFavorites(favorites.filter((favObj) => favObj !== images));
   };
+
+  function onCreateProject(newImage) {
+    setImages((images) => [...images, newImage]);
+  }
 
   const addToFavorites = (image) => {
     console.log("image: ", image);
     if (!favorites.includes(image)) {
       setFavorites([...favorites, image]);
     }
+    // fetch("http://localhost:8000/images/favorites", {
+    //   method: "PATCH",
+    //   headers: {
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(setFavorites),
+    // })
+    //   .then((res) => res.json())
+    //   .then(console.log);
   };
 
   return (
@@ -39,7 +51,7 @@ function Home() {
           <Favorites favorites={favorites} removeFavorites={removeFavorites} />
         </Route>
         <Route path="/contribute">
-          <ContributeForm />
+          <ContributeForm images={images} onCreateProject={onCreateProject} />
         </Route>
         <Route exact path="/">
           <Detail images={images} addToFavorites={addToFavorites} />
@@ -48,10 +60,6 @@ function Home() {
           <h1>404 not found</h1>
         </Route>
       </Switch>
-
-      {/* <Detail images={images} addToFavorites={addToFavorites} /> */}
-      {/* <Favorites favorites={favorites} /> */}
-      {/* <ContributeForm /> */}
     </div>
   );
 }

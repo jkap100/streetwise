@@ -9,6 +9,8 @@ function ImageCard({ imgObj, handleClick }) {
         src={imgObj.image}
         alt="graffiti"
       />
+      <h4>{imgObj.name}</h4>
+      <h6>{imgObj.location}</h6>
     </div>
   );
 }

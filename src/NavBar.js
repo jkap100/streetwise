@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import logo from "./Streetwise.png";
 
 function NavBar() {
   return (
@@ -9,6 +10,7 @@ function NavBar() {
       </NavLink>
       <NavLink to="/favorites">Favorites</NavLink>
       <NavLink to="/contribute">Contribute</NavLink>
+      <NavLink className="logo" id="logo" to="/" src={logo}></NavLink>
     </nav>
   );
 }
