@@ -2,22 +2,32 @@ import React from "react";
 
 function ImageCard({ imgObj, handleClick }) {
   return (
-    <div className="card">
-      <img
-        id="main-images"
-        onClick={() => handleClick(imgObj)}
-        onMouseEnter={() => {
-          console.log("Event:MouseEnter");
-        }}
-        onMouseLeave={() => {
-          console.log("Event:MouseLeave");
-        }}
-        id="thumbnail"
-        src={imgObj.image}
-        alt="graffiti"
-      />
-      <h4>{imgObj.name}</h4>
-      <h6>{imgObj.location}</h6>
+    <div>
+      <div className="card">
+        <img
+          id="main-images"
+          // class="hover"
+          // onClick={() => handleClick(imgObj)}
+          // onMouseEnter={() => {
+          //   console.log("Event:MouseEnter");
+          // }}
+          // onMouseLeave={() => {
+          //   console.log("Event:MouseLeave");
+          // }}
+          id="thumbnail"
+          src={imgObj.image}
+          alt="graffiti"
+        />
+      </div>
+      <div id="card-bottom">
+        <h4>{imgObj.name}</h4>
+        <h6>{imgObj.location}</h6>
+        <div className="btn-div">
+          <button id="fav-btn" onClick={() => handleClick(imgObj)}>
+            ⭐️
+          </button>
+        </div>
+      </div>
     </div>
   );
 }

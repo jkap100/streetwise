@@ -37,39 +37,70 @@ function ContributeForm({ onCreateProject }) {
   }
 
   return (
-    <section>
-      <form className="form" autoComplete="off" onSubmit={handleSubmit}>
-        <h3>Add New Piece</h3>
+    <div id="contribute-image">
+      <div id="form-div">
+        <section id="form-section">
+          <form
+            id="form"
+            className="form"
+            autoComplete="off"
+            onSubmit={handleSubmit}
+          >
+            <div>
+              <h3 id="contribute-header">Add New Piece</h3>
+            </div>
 
-        <label htmlFor="name">Name</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          onChange={handleChange}
-          value={formState.name}
+            <label className="labels" htmlFor="name">
+              Name
+            </label>
+            <input
+              className="input"
+              type="text"
+              id="name"
+              name="name"
+              onChange={handleChange}
+              value={formState.name}
+              placeholder="Name of piece"
+            />
+
+            <label className="labels" id="location-label" htmlFor="Location">
+              Location
+            </label>
+            <input
+              className="input"
+              id="location"
+              name="location"
+              onChange={handleChange}
+              value={formState.location}
+              placeholder="Location of piece"
+            />
+
+            <label className="labels" id="photo-label" htmlFor="image">
+              Photo
+            </label>
+            <input
+              className="input"
+              type="text"
+              id="image"
+              name="image"
+              onChange={handleChange}
+              value={formState.image}
+              placeholder="Image URL"
+            />
+
+            <button id="submit-button" type="submit">
+              Add Photo
+            </button>
+          </form>
+        </section>
+      </div>
+      <div>
+        <img
+          src="https://as1.ftcdn.net/v2/jpg/01/74/81/36/1000_F_174813667_h4msLi2TkYzbxGfbiJUvlxWvYGCDVlb2.jpg"
+          alt=""
         />
-
-        <label htmlFor="Location">Location</label>
-        <textarea
-          id="location"
-          name="location"
-          onChange={handleChange}
-          value={formState.location}
-        />
-
-        <label htmlFor="image">Photo</label>
-        <input
-          type="text"
-          id="image"
-          name="image"
-          onChange={handleChange}
-          value={formState.image}
-        />
-
-        <button type="submit">Add Project</button>
-      </form>
-    </section>
+      </div>
+    </div>
   );
 }
 

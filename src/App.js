@@ -2,6 +2,7 @@
 // import { Redirect, Switch, Route } from "react-router-dom";
 // import NavBar from "./NavBar";
 import Home from "./Home";
+import "./fonts/Nunito-VariableFont_wght.ttf";
 // import Favorites from "./Favorites";
 // import ContributeForm from "./ContributeForm";
 

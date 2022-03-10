@@ -65,6 +65,18 @@
       "name": "Popeye",
       "location": "Estonia",
       "id": 12
+    },
+    {
+      "image": "https://www.publicdomainpictures.net/pictures/390000/velka/surfer-graffiti-art-in-byron-bay-1612973641h05.jpg",
+      "name": "Surf BLT",
+      "location": "Byron Bay, NSW, Australia",
+      "id": 13
+    },
+    {
+      "image": "https://cdn.pixabay.com/photo/2016/12/01/04/25/graffiti-1874452_960_720.jpg",
+      "name": "Graffiti Wall",
+      "location": "Unkown",
+      "id": 14
     }
   ]
 }
