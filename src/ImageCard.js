@@ -4,6 +4,7 @@ function ImageCard({ imgObj, handleClick }) {
   return (
     <div className="card">
       <img
+        id="main-images"
         onClick={() => handleClick(imgObj)}
         onMouseEnter={() => {
           console.log("Event:MouseEnter");

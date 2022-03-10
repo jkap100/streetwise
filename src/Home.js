@@ -4,6 +4,7 @@ import NavBar from "./NavBar";
 import Favorites from "./Favorites";
 import ContributeForm from "./ContributeForm";
 import Detail from "./Detail";
+import Header from "./Header";
 // import PopUp from "./PopUp";
 
 function Home() {
@@ -89,6 +90,7 @@ function Home() {
         searchTerm={searchTerm}
         setSearchTerm={setSearchTerm}
       />
+      <Header />
       <Switch>
         <Route path="/favorites">
           <Favorites

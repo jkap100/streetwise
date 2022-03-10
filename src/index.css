@@ -29,7 +29,6 @@ code {
   max-width: 300px;
   max-height: 200px;
   width: auto;
-  height: auto;
 }
 
 #mainDisplay {
@@ -89,10 +88,6 @@ code {
   background-color: #04aa6d;
   color: white;
 }
-*/ #logo {
-  background-color: white;
-  display: flex;
-}
 
 /* Popup style */
 .popup-box {
@@ -137,4 +132,21 @@ code {
 img:hover {
   transform: scale(2);
   position: flex;
+}
+
+#logo {
+  display: flex;
+  margin-left: auto;
+  width: 250px;
+  height: 150px;
+}
+
+#search {
+  display: flex;
+  margin-left: auto;
+  width: 200px;
+  height: 45px;
+  border: 45px;
+  border-radius: 4px;
+  border-color: #333;
 }
