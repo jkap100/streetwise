@@ -5,15 +5,7 @@ function ImageCard({ imgObj, handleClick }) {
     <div>
       <div className="card">
         <img
-          id="main-images"
-          // class="hover"
-          // onClick={() => handleClick(imgObj)}
-          // onMouseEnter={() => {
-          //   console.log("Event:MouseEnter");
-          // }}
-          // onMouseLeave={() => {
-          //   console.log("Event:MouseLeave");
-          // }}
+          // id="main-images"
           id="thumbnail"
           src={imgObj.image}
           alt="graffiti"

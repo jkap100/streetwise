@@ -7,9 +7,13 @@ function Favorites({ favorites, removeFavorites }) {
   ));
 
   return (
-    <div id="imageCard">
-      <h1>Favorite Images</h1>
-      <div id="favImages">{favoritesCard}</div>
+    <div id="favorites-container">
+      <div id="imageCard">
+        <div>
+          <h3 className="contribute-header">Your Favorite Pieces</h3>
+        </div>
+        <div id="favImages">{favoritesCard}</div>
+      </div>
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-// import logo from "./Streetwise.png";
 
 function NavBar({ searchTerm, setSearchTerm }) {
   return (

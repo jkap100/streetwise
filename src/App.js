@@ -3,12 +3,8 @@
 // import NavBar from "./NavBar";
 import Home from "./Home";
 import "./fonts/Nunito-VariableFont_wght.ttf";
-// import Favorites from "./Favorites";
-// import ContributeForm from "./ContributeForm";
 
 function App() {
-  // const [page, setPage] = useState("/");
-
   return (
     <div>
       <Home />

@@ -47,10 +47,10 @@ function ContributeForm({ onCreateProject }) {
             onSubmit={handleSubmit}
           >
             <div>
-              <h3 id="contribute-header">Add New Piece</h3>
+              <h3 className="contribute-header">Add New Piece</h3>
             </div>
 
-            <label className="labels" htmlFor="name">
+            <label id="form-name" className="labels" htmlFor="name">
               Name
             </label>
             <input
@@ -94,9 +94,10 @@ function ContributeForm({ onCreateProject }) {
           </form>
         </section>
       </div>
-      <div>
+      <div id={"contribute-img-div"}>
         <img
-          src="https://as1.ftcdn.net/v2/jpg/01/74/81/36/1000_F_174813667_h4msLi2TkYzbxGfbiJUvlxWvYGCDVlb2.jpg"
+          id="contribute-img"
+          src="https://images.unsplash.com/photo-1601913463731-cfba9fd31ed3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
           alt=""
         />
       </div>
